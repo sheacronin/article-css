@@ -1,0 +1,161 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles */
+
+:root {
+    --blue: #00b3e5;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Serif",Georgia,serif;
+    color: #4d4d4d;
+}
+
+.wrapper {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+h1, h2, h4, button {
+    font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
+    color: black;
+}
+
+button {
+    background: var(--blue);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header {
+    background-color: pink;
+}
+
+.header-info h1 {
+    font-size: 60px;
+}
+
+.header-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: start;
+    padding-top: 20px;
+}
+
+.header-info a {
+    display: block;
+}
+
+.header-info button {
+    justify-self: end;
+    padding: 7px 40px;
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+/* Grid */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+/* Article */
+.main-article {
+    background: lightgreen;
+}
+
+/* Sidebar */
+aside {
+    background: lightblue;
+}
+
+.sidebar-buttons {
+    display: flex;
+}
+
+.sidebar-articles li {
+    padding: 20px;
+}
+
+/* Gallery */
+.gallery {
+    background: lightcoral;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background: lightgoldenrodyellow;
+}
