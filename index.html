@@ -5,115 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="header-info">
-                <div>
-                    <a href="#">NEWSLETTERS</a>
-                    <a href="#">Sign up to read our regular email newsletters</a>
-                </div>
-                <h1>NewScientist</h1>
-                <button>Get 6 Weeks Free</button>
+    <header>
+        <div class="header-info">
+            <div>
+                <a href="#" class="newsletters-title">NEWSLETTERS</a>
+                <a href="#" class="sign-up">Sign up to read our regular email newsletters</a>
             </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Podcats</a></li>
-                    <li><a href="#">Videp</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">Space</a></li>
-                    <li><a href="#">Physics</a></li>
-                    <li><a href="#">Health</a></li>
-                    <li><a href="#">More</a></li>
-                    <li class="alt-links"><a href="#">Shop</a></li>
-                    <li class="alt-links"><a href="#">Courses</a></li>
-                    <li class="alt-links"><a href="#">Events</a></li>
-                    <li class="alt-links"><a href="#">Tours</a></li>
-                    <li class="alt-links"><a href="#">Jobs</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <button>Sign In</button>
-                    </li>
-                    <li>
-                        <button>Search</button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <article class="main-article">
-                <h2>Ancient lake in Mars’s Gale crater may have actually been a small pond</h2>
-                <h3>SPACE 6 August 2021</h3>
-                <h3>By <a href="#">Leah Crane</a></h3>
-                <figure>
-                    <img src="images/mars.jpeg">
-                    <figcaption>
-                        <b>The rocks inside Gale crater hint there may not have been a large lake there after all</b>
-                        <span>NASA/JPL-Caltech/University of Arizona</span>
-                    </figcaption>
-                </figure>
-                <p>
-                    A purported ancient lake on Mars may have been far smaller than researchers thought. NASA’s Curiosity rover has been exploring Gale crater for more than eight years, and while early observations suggested the entire crater may once have been filled with water, a new analysis implies that it just had a series of ponds instead.
-                </p>
-                <p>
-                    Previous analyses of data from Curiosity have relied heavily on a measure called the chemical index of alteration to determine how rocks were weathered over time. Joseph Michalski at the University of Hong Kong and his colleagues have suggested that because this measure was developed for use on Earth, it may not be valid in the extreme Martian climate.
-                </p>
-                <p>
-                    Instead, they analysed the concentrations of various compounds that are expected to change based on different types of weathering over time. They found that some of the layers of rock Curiosity examined did interact with water at some point in their past, but more are likely to have formed outside of the water.
-                </p>
-                <div class="callout">
-                    Read more: <a href="#">Microbes burping methane on Mars may be right next to NASA rover</a>
-                </div>
-                <p>
-                    “Over hundreds of metres of strata, it seems that the only layers that are demonstrably lacustrine [formed in a lake] are the lower few metres,” says Michalski. “Of the rocks visited by the rover… the fraction that is demonstrably lacustrine is something like 1 per cent.”
-                </p>
-                <p>
-                    These rocks were mostly in the lowest few metres of sediments in the crater, suggesting the lake was not nearly as deep or extensive as we thought. “There was likely a small lake or more likely a series of small lakes in the floor of Gale crater, but these were shallow ponds,” says Michalski.
-                </p>
-                <p>
-                    The rocks that didn’t form in water appeared to be volcanic, so Michalski says that they may have formed out of ash from volcanic eruptions after the water in Gale crater had dried up. Observations by other Mars missions have hinted that these sediments were deposited by wind, not water, so this may solve that mismatch.
-                </p>
-            </article>
-            <aside>
-                <ul class="sidebar-buttons">
-                    <li><button>Trending</button></li>
-                    <li><button>Latest</button></li>
-                    <li><button>Video</button></li>
-                    <li><button>Free</button></li>
-                </ul>
-                <ol class="sidebar-articles">
-                    <li>Volcano eruption in Tonga was once-in-a-millennium event</li>
-                    <li>Unknown voices spark more brain activity in sleep than familiar ones</li>
-                    <li>Strongest evidence yet that MS is caused by Epstein-Barr virus</li>
-                    <li>Watch two black holes merge and zoom across galaxy</li>
-                    <li>Covid-19 news archive: Pfizer vaccine is 95 per cent effective</li>
-                </ol>
-            </aside>
-        </main>
-        <section class="gallery">
-            <article>
-                <img src="images/space.jpeg" alt="An astronaut floating in space">
-                <h4>Ancient Mars may have had a liquid ocean despite freezing temperatures</h4>
-            </article>
-            <article>
-                <img src="images/space.jpeg" alt="An astronaut floating in space">
-                <h4>Ancient Mars may have had a liquid ocean despite freezing temperatures</h4>
-            </article>
-            <article>
-                <img src="images/space.jpeg" alt="An astronaut floating in space">
-                <h4>Ancient Mars may have had a liquid ocean despite freezing temperatures</h4>
-            </article>
-            <article>
-                <img src="images/space.jpeg" alt="An astronaut floating in space">
-                <h4>Ancient Mars may have had a liquid ocean despite freezing temperatures</h4>
-            </article>
-        </section>
-        <footer>
-            sign up
-        </footer>
-    </div>
+            <h1>NewScientist</h1>
+            <button>Get 6 Weeks Free</button>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Podcasts</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Technology</a></li>
+                <li class="active"><a href="#">Space</a></li>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">More</a></li>
+                <li class="alt-links"><a href="#">Shop</a></li>
+                <li class="alt-links"><a href="#">Courses</a></li>
+                <li class="alt-links"><a href="#">Events</a></li>
+                <li class="alt-links"><a href="#">Tours</a></li>
+                <li class="alt-links"><a href="#">Jobs</a></li>
+            </ul>
+            <ul class="nav-buttons">
+                <li>
+                    <button>Sign In</button>
+                </li>
+                <li>
+                    <button>Search</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="main-article">
+            <h2>Ancient lake in Mars’s Gale crater may have actually been a small pond</h2>
+            <h3>SPACE 6 August 2021</h3>
+            <h3>By <a href="#">Leah Crane</a></h3>
+            <figure>
+                <img src="images/mars.jpeg">
+                <figcaption>
+                    <b>The rocks inside Gale crater hint there may not have been a large lake there after all</b>
+                    <span>NASA/JPL-Caltech/University of Arizona</span>
+                </figcaption>
+            </figure>
+            <p>
+                A purported ancient lake on Mars may have been far smaller than researchers thought. NASA’s Curiosity rover has been exploring Gale crater for more than eight years, and while early observations suggested the entire crater may once have been filled with water, a new analysis implies that it just had a series of ponds instead.
+            </p>
+            <p>
+                Previous analyses of data from Curiosity have relied heavily on a measure called the chemical index of alteration to determine how rocks were weathered over time. Joseph Michalski at the University of Hong Kong and his colleagues have suggested that because this measure was developed for use on Earth, it may not be valid in the extreme Martian climate.
+            </p>
+            <p>
+                Instead, they analysed the concentrations of various compounds that are expected to change based on different types of weathering over time. They found that some of the layers of rock Curiosity examined did interact with water at some point in their past, but more are likely to have formed outside of the water.
+            </p>
+            <div class="callout">
+                Read more: <a href="#">Microbes burping methane on Mars may be right next to NASA rover</a>
+            </div>
+            <p>
+                “Over hundreds of metres of strata, it seems that the only layers that are demonstrably lacustrine [formed in a lake] are the lower few metres,” says Michalski. “Of the rocks visited by the rover… the fraction that is demonstrably lacustrine is something like 1 per cent.”
+            </p>
+            <p>
+                These rocks were mostly in the lowest few metres of sediments in the crater, suggesting the lake was not nearly as deep or extensive as we thought. “There was likely a small lake or more likely a series of small lakes in the floor of Gale crater, but these were shallow ponds,” says Michalski.
+            </p>
+            <p>
+                The rocks that didn’t form in water appeared to be volcanic, so Michalski says that they may have formed out of ash from volcanic eruptions after the water in Gale crater had dried up. Observations by other Mars missions have hinted that these sediments were deposited by wind, not water, so this may solve that mismatch.
+            </p>
+        </article>
+        <aside>
+            <ul class="sidebar-buttons">
+                <li><button>Trending</button></li>
+                <li><button>Latest</button></li>
+                <li><button>Video</button></li>
+                <li><button>Free</button></li>
+            </ul>
+            <ol class="sidebar-articles">
+                <li>Volcano eruption in Tonga was once-in-a-millennium event</li>
+                <li>Unknown voices spark more brain activity in sleep than familiar ones</li>
+                <li>Strongest evidence yet that MS is caused by Epstein-Barr virus</li>
+                <li>Watch two black holes merge and zoom across galaxy</li>
+                <li>Covid-19 news archive: Pfizer vaccine is 95 per cent effective</li>
+            </ol>
+        </aside>
+    </main>
+    <section class="gallery">
+        <article>
+            <img src="images/space.jpeg" alt="An astronaut floating in space">
+            <h4>Ancient Mars may have had a liquid ocean despite freezing temperatures</h4>
+        </article>
+        <article>
+            <img src="images/space.jpeg" alt="An astronaut floating in space">
+            <h4>Ancient Mars may have had a liquid ocean despite freezing temperatures</h4>
+        </article>
+        <article>
+            <img src="images/space.jpeg" alt="An astronaut floating in space">
+            <h4>Ancient Mars may have had a liquid ocean despite freezing temperatures</h4>
+        </article>
+        <article>
+            <img src="images/space.jpeg" alt="An astronaut floating in space">
+            <h4>Ancient Mars may have had a liquid ocean despite freezing temperatures</h4>
+        </article>
+    </section>
+    <footer>
+        sign up
+    </footer>
 </body>
 </html>

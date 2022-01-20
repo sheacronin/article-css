@@ -64,12 +64,6 @@ body {
     color: #4d4d4d;
 }
 
-.wrapper {
-    display: grid;
-    margin: 0 auto;
-    max-width: 1100px;
-}
-
 h1, h2, h4, button {
     font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
     color: black;
@@ -82,10 +76,21 @@ button {
     text-transform: uppercase;
 }
 
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
 /* Header */
 
 header {
-    background-color: pink;
+    margin: 0 0 20px 0;
+    width: 100vw;
+    border-bottom: 1px solid #bfbfbf;
 }
 
 .header-info h1 {
@@ -97,32 +102,88 @@ header {
     grid-template-columns: 1fr 2fr 1fr;
     justify-items: center;
     align-items: start;
-    padding-top: 20px;
+    padding: 20px 0 15px 0;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .header-info a {
     display: block;
 }
 
+.newsletters-title {
+    font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
+}
+
+.sign-up {
+    color: #9d9d9d;
+    font-size: 13px;
+}
+
+.sign-up:hover {
+    text-decoration: underline;
+}
+
 .header-info button {
     justify-self: end;
-    padding: 7px 40px;
+    padding: 5px 50px;
     border-radius: 4px;
+    font-size: 16px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: baseline;
+    padding-bottom: 5px;
 }
 
 nav ul {
     display: flex;
 }
 
+.nav-links li {
+    padding-right: 15px;
+    font-size: 18px;
+    font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
+}
+
+.nav-links a {
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-links li:hover a,
+.active a {
+    color: var(--blue);
+    border-bottom: 7px solid black;
+}
+
+.alt-links a {
+    color: var(--blue);
+}
+
+.nav-buttons button {
+    background: none;
+    color: black;
+    text-transform: none;
+    font-size: 18px;
+}
+
+.nav-buttons button:hover {
+    color: #9d9d9d;
+    text-decoration: underline;
+}
+
 /* Grid */
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-gap: 15px;
+    margin: 0 auto 20px auto;
+    max-width: 1100px;
 }
 
 /* Article */
@@ -149,6 +210,8 @@ aside {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .gallery img {
@@ -158,4 +221,6 @@ aside {
 /* Footer */
 footer {
     background: lightgoldenrodyellow;
+    max-width: 1100px;
+    margin: 0 auto;
 }
