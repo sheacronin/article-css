@@ -1,0 +1,1 @@
+A recreation of [this article page from New Scientist](https://www.newscientist.com/article/2286218-ancient-lake-in-marss-gale-crater-may-have-actually-been-a-small-pond/). This project was practice positioning elements with flexbox and grid, and creating a visually appealing page layout.
