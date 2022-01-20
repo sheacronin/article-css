@@ -226,15 +226,59 @@ figcaption b {
 
 /* Sidebar */
 aside {
-    background: lightblue;
+    position: sticky;
+    top: 200px;
+    align-self: start;
 }
 
 .sidebar-buttons {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.sidebar-buttons button {
+    padding: 10px;
+    background: #f5f5f5;
+    color: black;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar-buttons button:hover {
+    background: #ddd;
+}
+
+.active-button button {
+    background: var(--blue);
+    color: white;
+}
+
+.active-button button:hover {
+    background: var(--blue);
+}
+
+.sidebar-articles {
+    counter-set: sidebar-articles-counter;
 }
 
 .sidebar-articles li {
     padding: 20px;
+    background: #f5f5f5;
+    font-size: 21px;
+    font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.sidebar-articles li:after {
+    counter-increment: sidebar-articles-counter;
+    content: counter(sidebar-articles-counter);
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    color: var(--blue);
+    font-size: 32px;
 }
 
 /* Gallery */
