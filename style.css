@@ -88,9 +88,8 @@ a:hover, button:hover {
 /* Header */
 
 header {
-    margin: 0 0 20px 0;
+    margin-bottom: 10px;
     width: 100vw;
-    border-bottom: 1px solid #bfbfbf;
 }
 
 .header-info h1 {
@@ -102,7 +101,7 @@ header {
     grid-template-columns: 1fr 2fr 1fr;
     justify-items: center;
     align-items: start;
-    padding: 20px 0 15px 0;
+    padding-top: 20px;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -132,12 +131,17 @@ header {
 }
 
 nav {
+    background: white;
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
     align-items: baseline;
     padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #bfbfbf;
+    margin-bottom: 20px;
 }
 
 nav ul {
